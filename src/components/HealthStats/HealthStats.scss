@@ -1,0 +1,70 @@
+
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.container {
+  color:#BCBABA;
+  // display: flex;
+  // flex-direction: column
+}
+
+.health{
+  color: $text-light;
+  background-color: black;
+  width: 100%;
+  border-radius: 1em;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+
+
+}
+
+.healthy {
+  color: green;
+  margin-bottom: auto;
+
+  &-atrisk {
+    color: red;
+    margin-bottom: auto;
+  }
+}
+
+#help{
+  height: 24px;
+  width: 50%;
+}
+
+
+
+.STT {
+  display: flex;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+}
+
+
+
+
+
+#hlth {
+  margin-bottom: auto;
+}
+
+#typ {
+  margin-bottom: auto;
+}
+
+.durr{
+  background-color: transparent;
+  margin-left: 30%;
+}
+
+.cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 150%;
+}

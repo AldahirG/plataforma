@@ -1,0 +1,78 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.topbar {
+  background-color: $page-dark-background;
+}
+
+// .navbox {
+//   border-right: 1px solid #BCBABA;
+// }
+
+.user {
+  color: #bcbaba;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  // border-bottom: 3px solid #707070;
+  font-size: 20px;
+}
+
+.logged-user {
+  color: #5e6dcb;
+}
+
+.navitems {
+  color: "#BCBABA";
+  :hover {
+    color: white !important;
+  }
+}
+
+a {
+  color: #bcbaba !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: white !important;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+// .closebutton {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
+// }
+
+.trademark--logout {
+  display: flex;
+  flex-direction: column;
+  height: 40rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.navfooter {
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+  color: $text-light;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.divider {
+  margin-top: 5rem;
+  color: #bcbaba;
+  height: 0.2px;
+}
+
+// .lists-items {
+//   margin-left: 2rem;
+//   color: green;
+// }

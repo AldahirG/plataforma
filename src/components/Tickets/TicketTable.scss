@@ -1,0 +1,88 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+table {
+  background-color: $project-table-background;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1px solid $text-light;
+}
+
+th {
+  color: $text-light !important;
+  cursor: pointer;
+  border-top: 1px solid $text-light;
+}
+
+.tabletitle {
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $project-table-background;
+    cursor: default;
+  }
+}
+
+td {
+  cursor: pointer;
+  color: $text-light !important;
+}
+
+tr {
+  border-right: 1px solid $text-light !important;
+  border-left: 1px solid $text-light !important;
+  border-right: 1px solid $text-light !important;
+
+  &:hover {
+    background-color: $hover-color;
+    cursor: pointer;
+    color: $text-light;
+  }
+}
+
+.list {
+  &__item {
+    @include fade;
+
+    color: $text-light;
+    height: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $project-table-background;
+    font: $font-family;
+    justify-content: space-between;
+    border: 0.2px solid #707070;
+    // border: 0.1px solid $text-light;
+
+    &:hover {
+      background-color: $hover-color;
+      cursor: pointer;
+      color: $text-light;
+    }
+
+    &-selected {
+      background-color: white;
+      color: $text-dark;
+
+      &:hover {
+        background-color: black;
+        color: $text-light;
+      }
+    }
+  }
+}
+
+.MuiTableRow-root {
+  &.Mui-selected.list__item {
+    background-color: $text-light;
+    color: black;
+
+    .MuiTableCell-root.MuiTableCell-body.MuiTableCell-sizeMedium {
+      background-color: $text-light;
+      color: $text-dark !important;
+    }
+  }
+}

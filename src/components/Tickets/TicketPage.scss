@@ -1,0 +1,311 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.tiptop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.project-header {
+  color: $text-light;
+  margin-left: 30px;
+  margin-top: -7px;
+}
+
+.loggedin {
+  margin-top: px;
+  margin-right: 30px;
+  color: $text-light;
+}
+
+.top-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  width: 100%;
+  padding-right: 1%;
+}
+.tickets-upper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Team-box {
+  margin-left: 1%;
+  width: 29%;
+}
+
+.Tickets-box {
+  margin-right: 1%;
+  width: 67%;
+}
+
+.tickets-lower {
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $project-table-background;
+  border-radius: 15px;
+  border: 1px solid $text-light;
+  margin-left: 1%;
+  margin-right: 1%;
+  color: $text-light;
+  margin-bottom: 50px;
+}
+
+.Comments-box {
+  border-radius: 1px solid $text-light;
+}
+
+.Tasks-box {
+  border-radius: 5px solid $text-light;
+  margin-left: 4%;
+  margin-bottom: 20px;
+}
+
+#mini {
+  padding-top: 10px;
+  height: 50px;
+  padding-left: 5px;
+  color: $text-light;
+}
+
+.top-tick {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: transparent;
+  border-bottom: 1px solid $text-light;
+  background-color: $project-table-background;
+}
+
+.bottom-tick {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+
+  &-hide {
+    height: 0px;
+    visibility: hidden;
+  }
+}
+
+.right-side {
+  width: 50%;
+}
+
+.left-side {
+  width: 50%;
+}
+
+.Progress-Bars_box {
+  padding-left: 30px;
+}
+
+.Health-box {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  height: 90px;
+  border-bottom: 1px solid $text-light;
+  width: 91%;
+  margin-left: 4%;
+}
+
+#commenttile {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 96%;
+  margin-left: 4%;
+  border-radius: 5px;
+  background-color: black;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#Comment-top {
+  border: transparent;
+  border-bottom: 1px solid;
+  width: 95%;
+  margin-left: 2.5%;
+}
+
+#Comment-bottom {
+  border: transparent;
+  width: 95%;
+  margin-left: 2.5%;
+  height: 100px;
+}
+
+#tasktile {
+  border-color: transparent;
+  height: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 97%;
+  margin-left: 2.5%;
+
+  &:hover {
+    background-color: $project-table-background;
+  }
+}
+
+#Task-top {
+  border: transparent;
+  width: 95%;
+  margin-left: 1;
+}
+
+#Task-bottom {
+  border: transparent;
+  width: 95%;
+  margin-left: 2.5%;
+  height: 0;
+}
+
+#teamtile {
+  display: flex;
+  justify-content: left;
+  border-color: transparent;
+  height: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 95%;
+  margin-left: 2.5%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $project-table-background;
+  }
+}
+
+.noPointer {
+  &:hover {
+    cursor: default;
+  }
+}
+
+#Devs-top {
+  border: transparent;
+  width: 95%;
+  margin-left: 1;
+  border-top: 1px solid $text-light;
+  border-radius: 0;
+}
+
+#Devs-bottom {
+  border: transparent;
+  width: 95%;
+  margin-left: 2.5%;
+  height: 0;
+}
+
+.Assignees-box {
+  margin-left: 4%;
+}
+
+#commentInput {
+  width: inherit;
+  height: 50px;
+  border-radius: 30px;
+  background-color: black;
+  color: $text-light;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  padding-left: 1rem;
+  outline: none;
+  border: inherit;
+}
+
+.commentZone {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 98%;
+  height: 50px;
+  border-radius: 30px;
+  background-color: black;
+  margin-bottom: 2rem;
+  margin: 1rem;
+}
+
+.new-comment {
+  // margin-left: 20px;
+  width: 150px;
+  height: inherit !important;
+  padding: 3px;
+}
+
+#DevssuperList {
+  background-color: $project-table-background;
+  width: 100%;
+}
+
+#TasksuperList {
+  background-color: $project-table-background;
+  width: 100%;
+}
+
+#CommentsuperList {
+  background-color: $project-table-background;
+  width: 107%;
+}
+
+.ComPost {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ComPre {
+  display: flex;
+  flex-direction: column;
+}
+
+.comtiny {
+  margin-top: 10px;
+}
+
+.TmPost {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 99%;
+}
+
+.TkPost {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.TkPre {
+  display: flex;
+}
+
+.tktiny {
+  margin-left: 70px;
+}
+
+.new-task {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 25px;
+  height: 45px;
+}
